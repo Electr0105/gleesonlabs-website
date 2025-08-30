@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{title}}</title>
+<title>{{title}}</title>
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/blog-style.css" rel="stylesheet">
     <script data-goatcounter="https://gleesonlabs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
     <header class="header">
@@ -20,7 +21,11 @@
     </nav>
   </header>
   <body>
+    {{page.date.toLocaleString()}}
+
+    <section>
       {{ content }}
+    </section>
   </body>
   <footer>
     <hr>

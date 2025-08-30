@@ -1,0 +1,15 @@
+h1{
+  font-size: 40px;
+}
+
+p {
+  font-size: larger;
+  line-height: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.creation-date{
+  color: lightgray;
+  font-style: italic;
+}

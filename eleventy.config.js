@@ -1,8 +1,16 @@
-module.exports = function(eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("public");
-  
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return dateObj.toLocaleString(undefined, {
+      year: "numeric",
+      month: "long"
+      day: "numeric",
+    });
+  });
+
   return {
     dir: {
       input: "src",
@@ -11,4 +19,3 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
-

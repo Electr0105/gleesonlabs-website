@@ -1,0 +1,17 @@
+---
+layout: layout.html
+pagination:
+  data: collections.post
+  size: 2
+  alias: posts
+title: Blog
+---
+
+<ul>
+  {% for post in posts %}
+  <li><a href="{{post.url}}">{{post.data.title}}{% if post.data.sub-title %}: {{post.data.sub-title}}{% endif %}</a></li>
+  {% endfor %}
+</ul>
+
+{% if pagination.href.previous %}<a href="{{pagination.href.previous}}">Previous Page</a>{% endif %}
+{% if pagination.href.next%}<a href="{{pagination.href.next}}">Next Page</a>{% endif %}
