@@ -53,6 +53,11 @@ section {
   overflow: hidden;
   width: 80vw;
   margin: 0 auto;
+  padding:5px ;
+}
+
+.separator {
+  padding: 5px;
 }
 
 .brand {

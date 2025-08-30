@@ -111,3 +111,44 @@ section {
 .container{
   margin-bottom: 20px
 }
+.brand {
+  flex-basis: 100%; 
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #f2f2f2;
+  background-color: #333;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  color: #4aa8ff;
+  border-bottom: 2px solid #4aa8ff;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.topnav a {
+  flex: 1; /* equal width links */
+  text-align: center;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 0;
+  margin: 5px;
+  border-radius: 8px;
+  transition:0.3s;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+.topnav a.active {
+  background-color: #4aa8ff;
+  color: black;
+}
+
