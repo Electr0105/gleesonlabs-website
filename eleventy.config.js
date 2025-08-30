@@ -2,6 +2,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("src/blog/2025");
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return dateObj.toLocaleString(undefined, {

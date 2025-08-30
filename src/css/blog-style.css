@@ -9,7 +9,30 @@ p {
   padding-bottom: 10px;
 }
 
+ul{
+  font-size: larger;
+  padding-left: 5%;
+}
+
 .creation-date{
   color: lightgray;
   font-style: italic;
+}
+
+hr {
+  margin: 40px;
+}
+
+.footer-hr{
+  margin-bottom: 0px;
+}
+
+
+img{
+  display: block;
+  align-content: center;
+  width: 80%;
+  margin: auto;
+  opacity: 80%;
+  padding-top: 50px;
 }
