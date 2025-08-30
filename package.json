@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy"
+    "build": "npx @11ty/eleventy"
   }
 }
