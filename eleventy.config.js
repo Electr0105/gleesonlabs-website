@@ -1,4 +1,4 @@
-export default function (eleventyConfig) {
+export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("public");
@@ -6,7 +6,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return dateObj.toLocaleString(undefined, {
       year: "numeric",
-      month: "long"
+      month: "long",
       day: "numeric",
     });
   });
