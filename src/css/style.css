@@ -33,7 +33,6 @@ section {
   background-color: #1b2130;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
 }
 
 section *{
@@ -62,7 +61,7 @@ section *{
   margin: 0 auto;
   padding:5px ;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-
+  margin-top: 20px;
 }
 
 .separator {
@@ -300,6 +299,7 @@ video{
   display: inline-block;
   text-align: left;
   align-self: flex-start;
+  padding-top: 100px;
 }
 
 .title-card hr{
