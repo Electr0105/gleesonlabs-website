@@ -277,7 +277,7 @@ video{
   min-height: 100%;
   object-fit: cover;
   z-index: -2; /* push video to the back */
-  opacity: 50%;
+  opacity: 40%;
 }
 
 #vid-overlay{
@@ -288,10 +288,34 @@ video{
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(255,255,255,0.3) 40%,   
+    rgba(255,255,255,0.0) 40%,   
     #4aa8ff 110%
   );
   z-index: -1; 
   pointer-events: none; 
 }
 
+.title-card{
+  font-size: 36px;
+  display: inline-block;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.title-card hr{
+  height: 4px;
+  background: #f1f1f1;
+  border: 0;
+  width: 110%;
+  margin-left: -10px;
+}
+
+.title-card a{
+  text-decoration: none;
+
+}
+
+.title-card a:hover{
+  opacity: 0.5;
+  transition: 0.3s;
+}
